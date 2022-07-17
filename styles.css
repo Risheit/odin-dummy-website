@@ -110,3 +110,39 @@ body {
     border-radius: 10px;
     font-size: 1.6vw;
 }
+
+/* Information */
+
+.information {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    padding: 0 6vw 6vw 6vw;
+
+}
+
+.information .flex-box {
+    justify-content: center;
+}
+
+.information h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 800;
+    color: #1F2937;
+    margin: 4vw;
+}
+
+/* Figure */
+
+.information figure {
+    flex: 0 1 auto;
+    width: 50%;
+    height: auto;
+    text-align: center;
+    font-size: 115%;
+}
+
+.information img {
+    size: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+}
