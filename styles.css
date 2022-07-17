@@ -5,6 +5,7 @@ body {
     flex-direction: column;
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    color: #1F2937;
 }
 
 .flex-box {
@@ -19,6 +20,7 @@ body {
 .hero,
 .footer {
     background-color: #1F2937;
+    color: #E5E7EB;
 }
 
 .call-to-action,
@@ -29,7 +31,6 @@ body {
 /* Hero */
 
 .hero {
-    color: #E5E7EB;
     display: flex;
     flex-direction: column;
     padding: 0 6vw 6vw 6vw;
@@ -127,7 +128,6 @@ body {
     text-align: center;
     font-size: 36px;
     font-weight: 800;
-    color: #1F2937;
     margin: 4vw;
 }
 
