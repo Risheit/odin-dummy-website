@@ -1,0 +1,112 @@
+/* Generals */
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-item {
+    flex: auto;
+}
+
+.hero,
+.footer {
+    background-color: #1F2937;
+}
+
+.call-to-action,
+.title button {
+    background-color: #3882F6;
+}
+
+/* Hero */
+
+.hero {
+    color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    padding: 0 6vw 6vw 6vw;
+    margin: 0;
+}
+
+.hero img {
+    size: 1em;
+    flex: 0 1 auto;
+    max-width: 50%;
+    max-height: 50%;
+}
+
+/* Headings */
+
+
+.hero .logo {
+    flex: auto;
+    color: #F9FAF8;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.hero .heading {
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.hero .navigation {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+
+.hero a {
+    font-size: 18px;
+    width: -moz-fit-content;
+    flex: 0 1 auto;
+}
+
+
+/* Description */
+
+.initial-content {
+    margin: 3.5vw 0 0 0;
+}
+
+/* Title */
+
+.title {
+    display: flex;
+    flex-direction: column;
+    padding: 0 6vw 0 0;
+}
+
+.title h1 {
+    flex: content;
+    font-size: 5vw;
+    font-weight: bold;
+    color: #F9FAF8;
+    margin: 0;
+}
+
+.title p {
+    flex: content;
+    font-size: 2vw;
+    margin: 0;
+}
+
+.title button {
+    color: #F9FAF8;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5em 2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.6vw;
+}
