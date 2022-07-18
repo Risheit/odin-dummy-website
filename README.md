@@ -1,5 +1,7 @@
 # odin-dummy-website
 
+A simple webpage created for the [The Odin Project Foundations Course](https://www.theodinproject.com/lessons/foundations-landing-page).
+
 Image Attributions
 * [Photo by Dalila Dalprat from Pexels](https://www.pexels.com/photo/paper-bags-sunlight-2300712/)
 * [Photo by Intricate Explorer](https://www.pexels.com/photo/a-person-standing-near-the-rock-formations-on-pulpit-rock-in-colorado-springs-colorado-united-states-6399679/)
