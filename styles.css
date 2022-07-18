@@ -4,7 +4,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-family: 'Nunito', 'Albert Sans', Raleway, 'Trebuchet MS', sans-serif;
     color: #1F2937;
 }
 
@@ -18,7 +18,7 @@ body {
 }
 
 .hero,
-.footer {
+footer {
     background-color: #1F2937;
     color: #E5E7EB;
 }
@@ -37,6 +37,13 @@ button {
     border: none;
     border-radius: 10px;
     font-size: 1.6vw;
+}
+
+footer {
+    text-align: center;
+    font-size: 20px;
+    padding: 1vw;
+    font-weight: lighter;
 }
 
 /* Hero */
