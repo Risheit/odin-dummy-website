@@ -24,8 +24,19 @@ body {
 }
 
 .call-to-action,
-.title button {
+button {
     background-color: #3882F6;
+}
+
+button {
+    color: #F9FAF8;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5em 2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.6vw;
 }
 
 /* Hero */
@@ -101,17 +112,6 @@ body {
     margin: 0;
 }
 
-.title button {
-    color: #F9FAF8;
-    width: fit-content;
-    height: fit-content;
-    padding: 0.5em 2em;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    border: none;
-    border-radius: 10px;
-    font-size: 1.6vw;
-}
-
 /* Information */
 
 .information {
@@ -169,4 +169,45 @@ body {
     text-align: end;
     font-weight: bold;
     font-size: 20px;
+}
+
+/* Call to Action */
+.call-to-action {
+    margin: 0 6vw 6vw 6vw;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4vw 9vw;
+}
+
+.call-to-action .flex-box {
+    flex-direction: column;
+    align-items: baseline;
+    width: fit-content;
+    height: fit-content;
+}
+
+.call-to-action .flex-item__text {
+    flex: 2 1 auto;
+}
+
+.call-to-action h3 {
+    color: #F9FAF8;
+    font-weight: bold;
+    margin: 1% 0;
+    text-align: left;
+    font-size: 24px;
+}
+
+.call-to-action p {
+    color: #E5E7EB;
+    margin: 0;
+    text-align: left;
+    font-size: 18px;
+}
+
+.call-to-action button {
+    flex: 0.5 1 0;
+    border: 2px solid #F9FAF8;
 }
