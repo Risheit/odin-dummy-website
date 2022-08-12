@@ -8,6 +8,42 @@
     <link rel="stylesheet" href="signup.css">
 </head>
 <body>
+    <p>
+        This is not a real online service! You know you need something like this in your life to help you realize your 
+        deepest dreams.<br> Sign up <em>now</em> to get started.
+    </p>
+    <p>You <em>know</em> you want to.</p>
+
+    <form action="dummysite/signup" method="post">
+        <fieldset>
+            <legend>Let's do this!</legend>
+
+            <p>
+                <label for="first_name">First Name</label>
+                <input type="text" name="first_name" id="first_name" placeholder="Thor">
+                <label for="last_name">Last Name</label>
+                <input type="text" name="last_name" id="last_name" placeholder="Odinson">
+
+            </p>
+            <p>
+                <input type="email" name="email" id="email" placeholder="asgard@valhalla.com">
+                <input type="number" name="phone_number" id="phone_number" placeholder="xxx-xxx-xxxx">
+
+                <label for="email">Email</label>
+                <label for="number">Phone Number</label>
+            </p>
+            <p>
+                <input type="password" name="password" id="password">
+                <input type="password" name="confirm_password" id="confirm_password">
+
+                <label for="password">Password</label>
+                <label for="confirm_password">Confirm Password</label>
+            </p>
+            
+        </fieldset>
+        <button type="submit">Create Account</button>
+    </form>
     
+    <p>Already have an account? <a href="signup.html">Log in</a></p>
 </body>
 </html>
