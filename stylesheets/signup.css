@@ -26,9 +26,22 @@ body {
 main {
     background-color: whitesmoke;
     flex: 2 1 0;
-    padding: 9vh 8rem;
+    padding: 9vh 0;
     height: 100vh; 
     box-sizing: border-box;
+}
+
+main h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+main h1.info {
+    margin: 8vh 4vw 3vh 4vw;
+}
+
+main h1.catchphrase {
+    margin: 3vh 4vw 8vh 4vw;
 }
 
 /* Side */
