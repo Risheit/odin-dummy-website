@@ -48,13 +48,14 @@
                 <p>
                 <span class="right">
                     <label for="password"> * Password</label>
-                    <input type="password" name="password" id="password" class="error" required>
+                    <input type="password" minlength="5" name="password" id="password" class="error" required>
                 </span>
                 <span class="left">
                     <label for="confirm_password"> * Confirm Password</label>
-                    <input type="password" name="confirm_password" id="confirm_password" class="error" required>
+                    <input type="password" minlength="5" name="confirm_password" id="confirm_password" class="error" required>
                 </span>
                 </p>
+                <p>Passwords must be at least 5 characters in length.</p>
             </fieldset>
             <button type="submit">Create Account</button>
         </form>
