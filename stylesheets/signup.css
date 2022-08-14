@@ -138,13 +138,14 @@ input:hover {
     animation: input-important 0.1s ease-out 0ms 1 normal forwards;
 }
 
-input:invalid {
+input.error:invalid {
     outline: red solid 2px;
     box-shadow: 0.1rem 0.1rem 0.3rem lightgray;
     animation: input-important 0.5s ease-out 0ms 1 normal forwards;
 }
 
-input:focus {
+input:focus,
+input.error:focus {
     outline: #458cff solid 2px;
     animation: input-selected 0.1s ease-out 0ms 1 normal forwards;
 }
