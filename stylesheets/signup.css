@@ -124,3 +124,9 @@ main p.login {
 }
 
 /* Side */
+
+.logo {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 20vh;
+}
