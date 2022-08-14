@@ -53,6 +53,10 @@ main h1.catchphrase {
     margin: 3vh 4vw 8vh 4vw;
 }
 
+main p.login {
+    margin: auto 4vw;
+}
+
 /* Form */
 
 main fieldset {
@@ -117,10 +121,6 @@ main button {
     border-radius: 10px;
     font-size: 1.4vw;
     box-shadow: 0.2rem 0.2rem 0.5rem gray;
-}
-
-main p.login {
-    margin: auto 4vw;
 }
 
 /* Side */
