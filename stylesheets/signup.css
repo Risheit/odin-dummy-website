@@ -1,3 +1,13 @@
+@font-face {
+    font-family: Comfortaa;
+    src: url(../fonts/Comfortaa-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/Raleway-VariableFont_wght.ttf);
+}
+
 /* Generals */
 
 body {
@@ -26,8 +36,7 @@ body {
 main {
     background-color: whitesmoke;
     flex: 2 1 0;
-    padding: 9vh 0;
-    height: 100vh; 
+    min-height: 100vh;
     box-sizing: border-box;
 }
 
@@ -42,6 +51,76 @@ main h1.info {
 
 main h1.catchphrase {
     margin: 3vh 4vw 8vh 4vw;
+}
+
+/* Form */
+
+main fieldset {
+    background-color: white;
+    border: 0;
+    box-shadow: 0px 0.3rem 0.5rem lightgray;
+    padding: 3vh 4vw;
+}
+
+main legend {
+    float: left;
+    margin: 0 0 0 0;
+    color: rgb(27, 40, 40);
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+main p {
+    display: block;
+    column-gap: 40px;
+}
+
+main span {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+main span.right {
+    margin: 0.5vh 4vw 0.5vh 0vw;
+}
+
+main label {
+    font-size: 0.7rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: Raleway, Comfortaa, Arial, Helvetica, sans-serif;
+    color: rgb(34, 56, 56);
+    letter-spacing: 0.1rem;
+    margin: 0 0 0.5vw 0;
+}
+
+main input {
+    font-size: 1rem;
+    padding: 4%;
+    border: 1px solid darkslategray;
+    border-radius: 5px;
+    min-width: fit-content;
+    width: 16vw;
+}
+
+main button {
+    margin: 2rem 4vw;
+    background-color: rgb(67, 14, 117);
+    color: #F9FAF8;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5em 2.3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.4vw;
+    box-shadow: 0.2rem 0.2rem 0.5rem gray;
+}
+
+main p.login {
+    margin: auto 4vw;
 }
 
 /* Side */
