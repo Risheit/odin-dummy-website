@@ -103,7 +103,7 @@ main label {
 main input {
     font-size: 1rem;
     padding: 4%;
-    border: 1px solid darkslategray;
+    border: 1px solid #E5E7EB;
     border-radius: 5px;
     min-width: fit-content;
     width: 16vw;
@@ -121,6 +121,26 @@ main button {
     border-radius: 10px;
     font-size: 1.4vw;
     box-shadow: 0.2rem 0.2rem 0.5rem gray;
+}
+
+@keyframes input-hover {
+    0% { box-shadow: 0rem 0rem 0rem lightgray; }
+    100% { box-shadow: 0.1rem 0.1rem 0.3rem lightgray; }
+}
+
+@keyframes input-selected {
+    0% { box-shadow: 0.1rem 0.1rem 0.3rem lightgray; }
+    100% { box-shadow: 0.2rem 0.2rem 0.7rem lightgray; }
+}
+
+input:hover {
+    box-shadow: 0.1rem 0.1rem 0.3rem lightgray;
+    animation: input-hover 0.1s ease-out 0ms 1 normal forwards;
+}
+
+input:focus {
+    outline: #458cff solid 2px;
+    animation: input-selected 0.1s ease-out 0ms 1 normal forwards;
 }
 
 /* Side */
