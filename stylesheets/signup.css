@@ -130,8 +130,22 @@ main button {
     box-shadow: 0.2rem 0.2rem 0.5rem gray;
 }
 
+button {
+    transition: all 0.15s ease-in-out 0s;
+}
+
 button:hover:enabled {
+    transform: translate(-1%, -1%);
     box-shadow: 0.4rem 0.4rem 0.7rem gray;
+}
+
+button:disabled {
+    filter: grayscale() brightness(50%);
+    transition: all 0.1s ease-out 0s;
+}
+
+button:active:enabled {
+    filter: brightness(85%);
 }
 
 input:hover,

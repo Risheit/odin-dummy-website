@@ -46,6 +46,23 @@ footer {
     font-weight: lighter;
 }
 
+button {
+    transition: all 0.15s ease-in-out 0s;
+}
+
+button:hover:enabled {
+    filter: brightness(115%);
+}
+
+button:disabled {
+    filter: grayscale() brightness(50%);
+    transition: all 0.1s ease-out 0s;
+}
+
+button:active:enabled {
+    filter: brightness(85%);
+}
+
 /* Hero */
 
 .hero {
@@ -63,7 +80,6 @@ footer {
 }
 
 /* Headings */
-
 
 .hero .logo {
     flex: auto;
