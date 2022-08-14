@@ -123,7 +123,7 @@ main button {
     box-shadow: 0.2rem 0.2rem 0.5rem gray;
 }
 
-@keyframes input-hover {
+@keyframes input-important {
     0% { box-shadow: 0rem 0rem 0rem lightgray; }
     100% { box-shadow: 0.1rem 0.1rem 0.3rem lightgray; }
 }
@@ -135,7 +135,13 @@ main button {
 
 input:hover {
     box-shadow: 0.1rem 0.1rem 0.3rem lightgray;
-    animation: input-hover 0.1s ease-out 0ms 1 normal forwards;
+    animation: input-important 0.1s ease-out 0ms 1 normal forwards;
+}
+
+input:invalid {
+    outline: red solid 2px;
+    box-shadow: 0.1rem 0.1rem 0.3rem lightgray;
+    animation: input-important 0.5s ease-out 0ms 1 normal forwards;
 }
 
 input:focus {
