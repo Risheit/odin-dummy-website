@@ -107,6 +107,7 @@ main input {
     border-radius: 5px;
     min-width: fit-content;
     width: 16vw;
+    box-shadow: 0rem 0rem 0rem lightgray;
 }
 
 main button {
@@ -123,31 +124,26 @@ main button {
     box-shadow: 0.2rem 0.2rem 0.5rem gray;
 }
 
-@keyframes input-important {
-    0% { box-shadow: 0rem 0rem 0rem lightgray; }
-    100% { box-shadow: 0.1rem 0.1rem 0.3rem lightgray; }
-}
-
-@keyframes input-selected {
-    0% { box-shadow: 0.1rem 0.1rem 0.3rem lightgray; }
-    100% { box-shadow: 0.2rem 0.2rem 0.7rem lightgray; }
+input:hover,
+input.error:invalid {
+    transition: all 0.1s ease-out 0ms;
 }
 
 input:hover {
     box-shadow: 0.1rem 0.1rem 0.3rem lightgray;
-    animation: input-important 0.1s ease-out 0ms 1 normal forwards;
 }
 
 input.error:invalid {
     outline: red solid 2px;
     box-shadow: 0.1rem 0.1rem 0.3rem lightgray;
-    animation: input-important 0.5s ease-out 0ms 1 normal forwards;
+    transition: all 0.1s ease-in-out 0ms;
 }
 
 input:focus,
 input.error:focus {
+    box-shadow: 0.2rem 0.2rem 0.7rem lightgray;
     outline: #458cff solid 2px;
-    animation: input-selected 0.1s ease-out 0ms 1 normal forwards;
+    transition: all 0.1s ease-out 0ms;
 }
 
 /* Side */
