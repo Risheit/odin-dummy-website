@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="stylesheets/button_effects.css">
+    <link rel="stylesheet" href="stylesheets/signup.css">
+    <script src="scripts/signup.js" defer></script>
+</head>
+
+<body>
+    <div class="side">
+        <p class="credit">Image by <a
+            href="https://pixabay.com/users/marjonhorn-3698690/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=7336249">Marjon
+            Besteman</a> from <a
+            href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=7336249">Pixabay</a>
+        </p>
+        <div class="logo"><img src="images/dummy_logo.svg" alt="Header Logo"></div>
+    </div>
+    <main>
+        <h1 class="info">
+            This is not a real online service! You know you need something like this in your life to help you realize
+            your
+            deepest dreams.<br> Sign up <em>now</em> to get started.
+        </h1>
+        <h1 class="catchphrase">You <em>know</em> you want to.</h1>
+
+        <form action="dummysite/signup" method="post">
+            <fieldset>
+                <legend>Let's do this!</legend>
+
+                <p>
+                    <span class="right">
+                        <label for="first_name"> * First Name</label>
+                        <input type="text" name="first_name" id="first_name" placeholder="Thor" required>
+                    </span>
+                    <span class="left">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" name="last_name" id="last_name" placeholder="Odinson">
+                    </span>
+                </p>
+                <p>
+                    <span class="right">
+                        <label for="email"> * Email</label>
+                        <input type="email" name="email" id="email" placeholder="asgard@valhalla.com" required>
+                    </span>
+                    <span class="left">
+                        <label for="number">Phone Number</label>
+                        <input type="number" name="phone_number" id="phone_number" placeholder="xxx-xxx-xxxx">
+                    </span>
+                </p>
+                <p>
+                    <span class="right">
+                        <label for="password"> * Password</label>
+                        <input type="password" minlength="5" name="password" id="password" required>
+                        <!-- <label id="password_mismatch">* Passwords do not match</label> -->
+                    </span>
+                    <span class="left">
+                        <label for="confirm_password"> * Confirm Password</label>
+                        <input type="password" minlength="5" name="confirm_password" id="confirm_password"
+                            required>
+                    </span>
+                </p>
+                <p>Passwords must be at least 5 characters in length.</p>
+            </fieldset>
+            <button id="submit_button" type="submit">Create Account</button>
+        </form>
+        <p class="login">Already have an account? <a href="signup.html">Log in</a></p>
+    </main>
+</body>
+
+</html>
