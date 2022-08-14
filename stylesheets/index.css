@@ -46,6 +46,11 @@ footer {
     font-weight: lighter;
 }
 
+button:hover:enabled {
+    transform: unset;
+    filter: brightness(115%);
+}
+
 /* Hero */
 
 .hero {
@@ -63,7 +68,6 @@ footer {
 }
 
 /* Headings */
-
 
 .hero .logo {
     flex: auto;
