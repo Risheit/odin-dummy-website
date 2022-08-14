@@ -10,13 +10,14 @@ function checkPassword() {
         confirmation.setCustomValidity(invalidString);
 
         createErrorMessage();
-
+        activatePasswordErrorBox();
     } else if (password.value.length !== 0 && confirmation.value.length !== 0) {
         password.setCustomValidity("");
         confirmation.setCustomValidity("");
 
         removeErrorMessage();
     }
+
 }
 
 function createErrorMessage() {
@@ -36,6 +37,18 @@ function removeErrorMessage() {
     document.querySelector("#password_mismatch").remove();
 }
 
+function activatePasswordErrorBox() {
+    document.querySelector("#password").className += " error";
+    document.querySelector("#confirm_password").className += " error";
+}
+
+function activateAllErrorBox() {
+    document.querySelectorAll("input")
+        .forEach(input => input.className += " error");
+}
+
 setInterval(checkPassword);
-document.querySelector("#submit_button")
-    .addEventListener("click", checkPassword);
+
+const submit = document.querySelector("#submit_button");
+submit.addEventListener("click", checkPassword);
+submit.addEventListener("click", activateAllErrorBox);
