@@ -130,6 +130,11 @@ main button {
     box-shadow: 0.2rem 0.2rem 0.5rem gray;
 }
 
+button:hover:enabled {
+    box-shadow: 0.4rem 0.4rem 0.7rem gray;
+    transition: all 0.1s ease-in-out 0s;
+}
+
 input:hover,
 input.error:invalid {
     transition: all 0.1s ease-out 0ms;
