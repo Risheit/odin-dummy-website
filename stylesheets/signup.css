@@ -159,3 +159,17 @@ input.error:focus {
     position: sticky;
     top: 20vh;
 }
+
+.credit {
+    color: white;
+    position: sticky;
+    top: 95vh;
+    text-align: center;
+    font-size: small;
+    margin: 1rem;
+}
+
+.credit a,
+.credit a:visited {
+    color: white;
+}
