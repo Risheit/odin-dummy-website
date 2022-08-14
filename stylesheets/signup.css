@@ -111,6 +111,11 @@ main input {
     box-shadow: 0rem 0rem 0rem lightgray;
 }
 
+main #password_mismatch {
+    color: red;
+    margin: 1vh 0;
+}
+
 main button {
     margin: 2rem 4vw;
     background-color: rgb(67, 14, 117);
