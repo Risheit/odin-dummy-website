@@ -1,6 +1,6 @@
 # odin-dummy-website
 
-A simple webpage created for the [The Odin Project Foundations Course](https://www.theodinproject.com/lessons/foundations-landing-page).
+A simple webpage created for the [The Odin Project](https://www.theodinproject.com/).
 See the webpage at https://risheit.github.io/odin-dummy-website/.
 
 Image Attributions
