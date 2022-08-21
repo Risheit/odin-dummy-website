@@ -125,11 +125,8 @@ main button {
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     border: none;
     border-radius: 10px;
-    font-size: 1.4vw;
+    font-size: max(1.4vw, 1.2rem);
     box-shadow: 0.2rem 0.2rem 0.5rem gray;
-}
-
-button {
     transition: all 0.15s ease-in-out 0s;
 }
 
