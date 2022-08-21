@@ -17,7 +17,7 @@ body {
     font-family: 'Nunito', 'Albert Sans', Raleway, 'Trebuchet MS', sans-serif;
     background-image: url("../images/signup_background.jpg");
     background-color: cornsilk;
-    background-size: cover;
+    background-size: auto 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -36,7 +36,6 @@ body {
 main {
     background-color: whitesmoke;
     flex: 2 1 0;
-    min-height: 100vh;
     box-sizing: border-box;
     padding: 8vh 0;
 }
@@ -126,11 +125,8 @@ main button {
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     border: none;
     border-radius: 10px;
-    font-size: 1.4vw;
+    font-size: max(1.4vw, 1.2rem);
     box-shadow: 0.2rem 0.2rem 0.5rem gray;
-}
-
-button {
     transition: all 0.15s ease-in-out 0s;
 }
 
@@ -171,10 +167,16 @@ input.error:focus {
 
 /* Side */
 
+.side {
+    flex: 1 1 10%;
+}
+
 .logo {
     background-color: rgba(0, 0, 0, 0.5);
     position: sticky;
     top: 20vh;
+    width: 100%;
+    height: auto;
 }
 
 .credit {
@@ -189,4 +191,35 @@ input.error:focus {
 .credit a,
 .credit a:visited {
     color: white;
+}
+
+
+/* Mobile viewing */
+@media (max-width: 500px) {
+    body {
+        flex-direction: column;
+    }
+
+    main {
+        z-index: 1;
+        background-color: whitesmoke;
+        box-shadow: 0px -0.8rem 2rem rgba(0, 0, 0, 0.9);
+    }
+
+    .side {
+        height: fit-content;
+        flex: 0 1 15%;
+        z-index: 0;
+        position: sticky;
+        top: 0;
+    }
+
+    .logo {
+        top: unset;
+        margin: 0 0 1rem 0;
+    }
+
+    .credit {
+        top: unset;
+    }
 }
