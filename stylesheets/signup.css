@@ -170,10 +170,16 @@ input.error:focus {
 
 /* Side */
 
+.side {
+    flex: 1 1 10%;
+}
+
 .logo {
     background-color: rgba(0, 0, 0, 0.5);
     position: sticky;
     top: 20vh;
+    width: 100%;
+    height: auto;
 }
 
 .credit {
