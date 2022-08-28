@@ -1,6 +1,6 @@
 # odin-dummy-website
 
-A simple webpage created for the [The Odin Project](https://www.theodinproject.com/).
+A website created for the [The Odin Project](https://www.theodinproject.com/) consisting of a main (index) page and a sign up page created through pure HTML and CSS.
 See the webpage at https://risheit.github.io/odin-dummy-website/.
 
 Image Attributions
